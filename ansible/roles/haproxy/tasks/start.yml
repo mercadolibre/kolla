@@ -31,7 +31,7 @@
   register: status
   changed_when: status.stdout.find('changed') != -1
 
-- name: Waiting for virtual IP to appear
-  wait_for:
-    host: "{{ kolla_internal_vip_address }}"
-    port: "{{ database_port }}"
+#- name: Waiting for virtual IP to appear
+#  wait_for:
+#    host: "{{ kolla_internal_vip_address }}"
+#    port: "{{ database_port }}"
